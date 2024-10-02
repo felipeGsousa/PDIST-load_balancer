@@ -48,7 +48,7 @@ async def load_balanced_proxy(service_name: str, path:str, request: Request):
 
     return backend_response.json()
 
-@app.post("/{service_name}/{path:path}")
+@app.post("/load-balanced/{service_name}/{path:path}")
 async def proxy_post(service_name: str, path: str, payload: dict):
     instance_url = get_next_instance(service_name)
     async with httpx.AsyncClient() as client:
