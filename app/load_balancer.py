@@ -1,7 +1,7 @@
-FILE_MICROSSERVICES = ["https://pdist-file-service.onrender.com/api/files/", "https://pdist-file-service-1.onrender.com/api/files/"]
-POST_MICROSSERVICES = ["https://pdist-back-1.onrender.com/api/posts/","https://pdist-back.onrender.com/api/posts/"]
-FORUM_MICROSSERVICES = ["https://pdist-back-1.onrender.com/api/forums/","https://pdist-back.onrender.com/api/forums/"]
-COMMENT_MICROSSERVICES = ["https://pdist-back-1.onrender.com/api/comments/","https://pdist-back.onrender.com/api/comments/"]
+FILE_MICROSSERVICES = ["https://pdist-file-service.onrender.com/api/files", "https://pdist-file-service-1.onrender.com/api/files"]
+POST_MICROSSERVICES = ["https://pdist-back-1.onrender.com/api/posts","https://pdist-back.onrender.com/api/posts"]
+FORUM_MICROSSERVICES = ["https://pdist-back-1.onrender.com/api/forums","https://pdist-back.onrender.com/api/forums"]
+COMMENT_MICROSSERVICES = ["https://pdist-back-1.onrender.com/api/comments","https://pdist-back.onrender.com/api/comments"]
 
 round_robin_counters = {
     "files": 0,
