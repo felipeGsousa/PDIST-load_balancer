@@ -36,6 +36,7 @@ async def add_prometheus_metrics(request: Request, call_next):
 async def load_balanced_proxy(service_name: str, path:str, request: Request):
     instance_url = get_next_instance(service_name)
     backend_url = f"{instance_url}/{path}"
+    print(backend_url)
     headers = dict(request.headers)
     data = await request.body()
 
